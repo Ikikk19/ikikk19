@@ -5,196 +5,271 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="RFormation - Portfolio of Rizkyla, Data Analyst & UI/UX Designer specializing in data analysis, system testing, and intuitive UI/UX design."
+      content="Rizkyla - Database Designer, Analyst & Tester. Expert in database architecture, data analysis, and system testing with a passion for data-driven solutions."
     />
     <meta
       name="keywords"
-      content="data analyst, UI/UX designer, system tester, portfolio, Rizkyla, RFormation"
+      content="database designer, data analyst, database tester, SQL, data architecture, system testing, Rizkyla"
     />
     <meta name="author" content="Rizkyla" />
-    <title>
-      RFormation - Rizkyla's Portfolio | Data Analyst & UI/UX Designer
-    </title>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="public/apple-touch-icon.png"
-    />
+    <title>Rizkyla - Database Designer & Data Analyst</title>
+
     <link
       rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="public/favicon-32x32.png"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗄️</text></svg>"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="public/favicon-16x16.png"
-    />
-    <link rel="manifest" href="public/site.webmanifest" />
-    <link rel="mask-icon" href="public/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
+
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/main.css" />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-  <body class="bg-dark-bg text-white">
+
+  <body class="bg-dark text-white overflow-x-hidden">
     <div class="scroll-indicator" id="scrollIndicator"></div>
+
     <nav
-      class="fixed top-0 w-full z-50 glass-card transition-all duration-300"
+      class="fixed top-0 w-full z-50 glass-effect transition-all duration-300"
       id="navbar"
     >
       <div class="container mx-auto px-6 py-4">
         <div class="flex justify-between items-center">
-          <div class="flex items-center space-x-4">
-            <img
-              src="assets/img/logo02.png"
-              alt="Profile"
-              class="w-12 h-12 rounded-full object-cover"
-            />
-            <div class="text-2xl font-bold gradient-text">RFormation</div>
+          <div class="flex items-center space-x-3">
+            <div
+              class="w-10 h-10 gradient-bg rounded-lg flex items-center justify-center"
+            >
+              <i class="ri-database-2-line text-white text-xl"></i>
+            </div>
+            <div class="text-xl font-bold gradient-text">Rizkyla</div>
           </div>
+
           <div class="hidden md:flex space-x-8">
             <a
               href="#home"
-              class="hover:text-red-primary transition-colors duration-300"
+              class="hover:text-primary transition-colors duration-300"
               >Home</a
             >
             <a
               href="#about"
-              class="hover:text-red-primary transition-colors duration-300"
+              class="hover:text-primary transition-colors duration-300"
               >About</a
             >
             <a
-              href="#skills"
-              class="hover:text-red-primary transition-colors duration-300"
-              >Skills</a
+              href="#expertise"
+              class="hover:text-primary transition-colors duration-300"
+              >Expertise</a
             >
             <a
-              href="#projects"
-              class="hover:text-red-primary transition-colors duration-300"
-              >Projects</a
+              href="#services"
+              class="hover:text-primary transition-colors duration-300"
+              >Services</a
             >
             <a
               href="#contact"
-              class="hover:text-red-primary transition-colors duration-300"
+              class="hover:text-primary transition-colors duration-300"
               >Contact</a
             >
           </div>
-          <button class="md:hidden text-red-primary" id="mobileMenuBtn">
-            <i class="fas fa-bars text-xl"></i>
+
+          <button class="md:hidden text-primary" id="mobileMenuBtn">
+            <i class="ri-menu-line text-2xl"></i>
           </button>
         </div>
+
         <div class="md:hidden mt-4 space-y-4 hidden" id="mobileMenu">
           <a
             href="#home"
-            class="block hover:text-red-primary transition-colors duration-300"
+            class="block hover:text-primary transition-colors duration-300"
             >Home</a
           >
           <a
             href="#about"
-            class="block hover:text-red-primary transition-colors duration-300"
+            class="block hover:text-primary transition-colors duration-300"
             >About</a
           >
           <a
-            href="#skills"
-            class="block hover:text-red-primary transition-colors duration-300"
-            >Skills</a
+            href="#expertise"
+            class="block hover:text-primary transition-colors duration-300"
+            >Expertise</a
           >
           <a
-            href="#projects"
-            class="block hover:text-red-primary transition-colors duration-300"
-            >Projects</a
+            href="#services"
+            class="block hover:text-primary transition-colors duration-300"
+            >Services</a
           >
           <a
             href="#contact"
-            class="block hover:text-red-primary transition-colors duration-300"
+            class="block hover:text-primary transition-colors duration-300"
             >Contact</a
           >
         </div>
       </div>
     </nav>
 
-    <section id="home" class="min-h-screen flex items-center justify-center">
-      <div class="absolute inset-0 opacity-10 overflow-hidden">
+    <section
+      id="home"
+      class="min-h-screen mt-20 flex items-center justify-center relative overflow-hidden"
+    >
+      <div class="absolute inset-0 opacity-20">
         <div
-          class="absolute top-20 left-20 w-72 h-72 bg-red-primary rounded-full mix-blend-multiply filter blur-xl animate-float"
+          class="absolute top-20 left-20 w-72 h-72 bg-primary rounded-full mix-blend-multiply filter blur-xl animate-float"
         ></div>
         <div
-          class="absolute top-40 right-20 w-72 h-72 bg-red-secondary rounded-full mix-blend-multiply filter blur-xl animate-float"
+          class="absolute top-40 right-20 w-72 h-72 bg-secondary rounded-full mix-blend-multiply filter blur-xl animate-float"
           style="animation-delay: 2s"
         ></div>
         <div
-          class="absolute bottom-20 left-1/2 w-72 h-72 bg-red-accent rounded-full mix-blend-multiply filter blur-xl animate-float"
+          class="absolute bottom-20 left-1/2 w-72 h-72 bg-accent rounded-full mix-blend-multiply filter blur-xl animate-float"
           style="animation-delay: 4s"
         ></div>
       </div>
-      <div class="container mx-auto px-6 text-center" data-aos="fade-up">
-        <h1 class="text-5xl md:text-7xl font-bold mb-6">
+
+      <div class="container mx-auto px-6 text-center relative z-10">
+        <div class="mb-8" data-aos="fade-down">
+          <div
+            class="w-32 h-32 mx-auto mb-6 gradient-bg rounded-full flex items-center justify-center animate-pulse-slow"
+          >
+            <i class="ri-database-2-line text-white text-5xl"></i>
+          </div>
+        </div>
+
+        <h1 class="text-5xl md:text-7xl font-bold mb-6" data-aos="fade-up">
           Hi, I'm <span class="gradient-text">Rizkyla</span>
         </h1>
-        <p class="text-xl md:text-2xl mb-8 text-gray-300">
-          Data Analyzer & UI/UX Designer
+
+        <p
+          class="text-xl md:text-2xl mb-4 text-gray-300"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Database Designer & Data Analyst
         </p>
-        <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
-          I analyze data, test systems, and design intuitive UI/UX experiences
-          that deliver real results.
-        </p>
-        <div
-          class="flex flex-col sm:flex-row gap-4 justify-center"
+
+        <p
+          class="text-lg text-gray-400 mb-12 max-w-3xl mx-auto"
           data-aos="fade-up"
           data-aos-delay="200"
         >
+          Transforming raw data into meaningful insights through expert database
+          design, comprehensive analysis, and rigorous testing. I create robust
+          data architectures that drive business decisions.
+        </p>
+
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           <a
-            href="#projects"
-            class="bg-red-primary hover:bg-red-secondary px-8 py-4 rounded-lg font-semibold transition-all duration-300"
+            href="#expertise"
+            class="gradient-bg hover:shadow-lg hover:shadow-primary/50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
           >
-            View My Work
+            View My Expertise
           </a>
           <a
-            href="public/docs/resume.pdf"
-            class="border-2 border-red-primary text-red-primary hover:bg-red-primary hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300"
-            target="_blank"
+            href="#contact"
+            class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300"
           >
-            Download CV
+            Get In Touch
           </a>
         </div>
       </div>
     </section>
 
-    <section id="about" class="py-20 bg-dark-card">
+    <section id="about" class="py-20 bg-dark-light">
       <div class="container mx-auto px-6">
         <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
           <h2 class="text-4xl md:text-5xl font-bold mb-8">
             About <span class="gradient-text">Me</span>
           </h2>
-          <p class="text-lg text-gray-300 mb-8 leading-relaxed">
-            I'm a beginner data analyst, UI/UX designer, and tester with a
-            passion for creating intuitive digital experiences. I enjoy
-            analyzing data, testing systems, and designing user-friendly
-            interfaces that deliver real results.
+
+          <p class="text-lg text-gray-300 mb-12 leading-relaxed">
+            I'm a passionate database professional with expertise in designing
+            efficient database architectures, analyzing complex datasets, and
+            ensuring system reliability through comprehensive testing. While I'm
+            still developing my coding skills, my strength lies in understanding
+            data relationships, optimizing database performance, and translating
+            business requirements into robust data solutions.
           </p>
+
+          <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <div
+              class="glass-effect rounded-xl p-6 hover-lift"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div
+                class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="ri-database-line text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-3 text-primary">
+                Database Design
+              </h3>
+              <p class="text-gray-400">
+                Creating efficient, scalable database architectures that meet
+                business needs and ensure data integrity.
+              </p>
+            </div>
+
+            <div
+              class="glass-effect rounded-xl p-6 hover-lift"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div
+                class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="ri-bar-chart-line text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-3 text-primary">Data Analysis</h3>
+              <p class="text-gray-400">
+                Extracting meaningful insights from complex datasets to support
+                data-driven decision making.
+              </p>
+            </div>
+
+            <div
+              class="glass-effect rounded-xl p-6 hover-lift"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div
+                class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="ri-bug-line text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-3 text-primary">
+                System Testing
+              </h3>
+              <p class="text-gray-400">
+                Ensuring database reliability and performance through
+                comprehensive testing methodologies.
+              </p>
+            </div>
+          </div>
+
           <div
             class="flex flex-wrap justify-center gap-4"
             data-aos="fade-up"
-            data-aos-delay="200"
+            data-aos-delay="400"
           >
-            <span
-              class="bg-red-primary/20 text-red-accent px-4 py-2 rounded-full"
-              >Creative Problem Solver</span
+            <span class="bg-primary/20 text-accent px-4 py-2 rounded-full"
+              >Data Architecture Expert</span
             >
-            <span
-              class="bg-red-primary/20 text-red-accent px-4 py-2 rounded-full"
-              >Team Player</span
+            <span class="bg-primary/20 text-accent px-4 py-2 rounded-full"
+              >Detail-Oriented</span
             >
-            <span
-              class="bg-red-primary/20 text-red-accent px-4 py-2 rounded-full"
+            <span class="bg-primary/20 text-accent px-4 py-2 rounded-full"
+              >Problem Solver</span
+            >
+            <span class="bg-primary/20 text-accent px-4 py-2 rounded-full"
               >Continuous Learner</span
             >
           </div>
@@ -202,248 +277,326 @@
       </div>
     </section>
 
-    <section id="skills" class="py-20">
+    <section id="expertise" class="py-20">
       <div class="container mx-auto px-6">
         <h2
           class="text-4xl md:text-5xl font-bold text-center mb-16"
           data-aos="fade-up"
         >
-          My <span class="gradient-text">Skills</span>
+          My <span class="gradient-text">Expertise</span>
         </h2>
 
-        <!-- Skills Grid -->
-        <div class="max-w-6xl mx-auto">
-          <!-- Frontend Development -->
-          <div class="mb-16">
+        <div class="mb-16">
+          <div
+            class="flex items-center justify-center mb-12"
+            data-aos="fade-up"
+          >
             <div
-              class="flex items-center justify-center mb-8"
+              class="h-px bg-gradient-to-r from-transparent via-primary to-transparent flex-1"
+            ></div>
+            <h3 class="text-2xl font-bold mx-6 text-primary">
+              Database Technologies
+            </h3>
+            <div
+              class="h-px bg-gradient-to-r from-transparent via-primary to-transparent flex-1"
+            ></div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div
+              class="skill-card glass-effect rounded-xl p-6 hover-lift"
               data-aos="fade-up"
+              data-aos-delay="100"
             >
-              <div
-                class="h-px bg-gradient-to-r from-transparent via-red-primary to-transparent flex-1"
-              ></div>
-              <h3 class="text-2xl font-bold mx-6 text-red-primary">
-                Frontend Development
-              </h3>
-              <div
-                class="h-px bg-gradient-to-r from-transparent via-red-primary to-transparent flex-1"
-              ></div>
+              <div class="flex items-center gap-4 mb-4">
+                <div
+                  class="w-14 h-14 gradient-bg rounded-lg flex items-center justify-center"
+                >
+                  <i class="ri-database-2-line text-white text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg">MySQL</h4>
+                  <p class="text-gray-400 text-sm">Relational Database</p>
+                </div>
+              </div>
+              <div class="mb-2">
+                <div class="flex justify-between text-sm mb-1">
+                  <span>Proficiency</span>
+                  <span class="text-primary">90%</span>
+                </div>
+                <div class="w-full bg-gray-700 rounded-full h-2">
+                  <div
+                    class="gradient-bg h-2 rounded-full"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <!-- CSS -->
-              <div
-                class="glass-card rounded-xl p-6 hover-lift transition-all duration-300 group"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <div class="flex items-center gap-4">
-                  <div
-                    class="w-14 h-14 bg-gradient-to-br from-red-primary to-red-secondary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
-                  >
-                    <i class="fab fa-css3-alt text-white text-2xl"></i>
-                  </div>
-                  <div class="flex-1">
-                    <h4 class="font-bold text-lg">CSS</h4>
-                    <p class="text-gray-400 text-sm">Styling & Animations</p>
-                  </div>
+            <div
+              class="skill-card glass-effect rounded-xl p-6 hover-lift"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="flex items-center gap-4 mb-4">
+                <div
+                  class="w-14 h-14 gradient-bg rounded-lg flex items-center justify-center"
+                >
+                  <i class="ri-file-text-line text-white text-2xl"></i>
                 </div>
-                <!-- Skill Level -->
-                <div class="mt-4">
-                  <div class="flex justify-between text-sm mb-1">
-                    <span>Proficiency</span>
-                    <span class="text-red-primary">70%</span>
-                  </div>
-                  <div class="w-full bg-gray-700 rounded-full h-2">
-                    <div
-                      class="bg-gradient-to-r from-red-primary to-red-secondary h-2 rounded-full"
-                      style="width: 70%"
-                    ></div>
-                  </div>
+                <div>
+                  <h4 class="font-bold text-lg">SQL</h4>
+                  <p class="text-gray-400 text-sm">Query Language</p>
                 </div>
               </div>
-
-              <!-- Bootstrap -->
-              <div
-                class="glass-card rounded-xl p-6 hover-lift transition-all duration-300 group"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                <div class="flex items-center gap-4">
-                  <div
-                    class="w-14 h-14 bg-gradient-to-br from-red-primary to-red-secondary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
-                  >
-                    <i class="fab fa-bootstrap text-white text-2xl"></i>
-                  </div>
-                  <div class="flex-1">
-                    <h4 class="font-bold text-lg">Bootstrap</h4>
-                    <p class="text-gray-400 text-sm">CSS Framework</p>
-                  </div>
+              <div class="mb-2">
+                <div class="flex justify-between text-sm mb-1">
+                  <span>Proficiency</span>
+                  <span class="text-primary">95%</span>
                 </div>
-                <!-- Skill Level -->
-                <div class="mt-4">
-                  <div class="flex justify-between text-sm mb-1">
-                    <span>Proficiency</span>
-                    <span class="text-red-primary">55%</span>
-                  </div>
-                  <div class="w-full bg-gray-700 rounded-full h-2">
-                    <div
-                      class="bg-gradient-to-r from-red-primary to-red-secondary h-2 rounded-full"
-                      style="width: 55%"
-                    ></div>
-                  </div>
+                <div class="w-full bg-gray-700 rounded-full h-2">
+                  <div
+                    class="gradient-bg h-2 rounded-full"
+                    style="width: 95%"
+                  ></div>
                 </div>
               </div>
+            </div>
 
-              <!-- HTML5 -->
-              <div
-                class="glass-card rounded-xl p-6 hover-lift transition-all duration-300 group"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <div class="flex items-center gap-4">
-                  <div
-                    class="w-14 h-14 bg-gradient-to-br from-red-primary to-red-secondary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
-                  >
-                    <i class="fab fa-html5 text-white text-2xl"></i>
-                  </div>
-                  <div class="flex-1">
-                    <h4 class="font-bold text-lg">HTML5</h4>
-                    <p class="text-gray-400 text-sm">Markup & Structure</p>
-                  </div>
+            <div
+              class="skill-card glass-effect rounded-xl p-6 hover-lift"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="flex items-center gap-4 mb-4">
+                <div
+                  class="w-14 h-14 gradient-bg rounded-lg flex items-center justify-center"
+                >
+                  <i class="ri-pie-chart-line text-white text-2xl"></i>
                 </div>
-                <!-- Skill Level -->
-                <div class="mt-4">
-                  <div class="flex justify-between text-sm mb-1">
-                    <span>Proficiency</span>
-                    <span class="text-red-primary">95%</span>
-                  </div>
-                  <div class="w-full bg-gray-700 rounded-full h-2">
-                    <div
-                      class="bg-gradient-to-r from-red-primary to-red-secondary h-2 rounded-full"
-                      style="width: 95%"
-                    ></div>
-                  </div>
+                <div>
+                  <h4 class="font-bold text-lg">Data Analysis</h4>
+                  <p class="text-gray-400 text-sm">Insights & Reporting</p>
+                </div>
+              </div>
+              <div class="mb-2">
+                <div class="flex justify-between text-sm mb-1">
+                  <span>Proficiency</span>
+                  <span class="text-primary">85%</span>
+                </div>
+                <div class="w-full bg-gray-700 rounded-full h-2">
+                  <div
+                    class="gradient-bg h-2 rounded-full"
+                    style="width: 85%"
+                  ></div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Tools & Technologies -->
-          <div>
+        <div class="mb-16">
+          <div
+            class="flex items-center justify-center mb-12"
+            data-aos="fade-up"
+          >
             <div
-              class="flex items-center justify-center mb-8"
+              class="h-px bg-gradient-to-r from-transparent via-primary to-transparent flex-1"
+            ></div>
+            <h3 class="text-2xl font-bold mx-6 text-primary">
+              Tools & Software
+            </h3>
+            <div
+              class="h-px bg-gradient-to-r from-transparent via-primary to-transparent flex-1"
+            ></div>
+          </div>
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div
+              class="glass-effect rounded-xl p-6 text-center hover-lift"
               data-aos="fade-up"
+              data-aos-delay="100"
             >
               <div
-                class="h-px bg-gradient-to-r from-transparent via-red-primary to-transparent flex-1"
-              ></div>
-              <h3 class="text-2xl font-bold mx-6 text-red-primary">
-                Tools & Technologies
-              </h3>
-              <div
-                class="h-px bg-gradient-to-r from-transparent via-red-primary to-transparent flex-1"
-              ></div>
+                class="w-16 h-16 mx-auto mb-4 gradient-bg rounded-full flex items-center justify-center"
+              >
+                <i class="ri-table-line text-white text-2xl"></i>
+              </div>
+              <h4 class="font-bold mb-2">Excel</h4>
+              <div class="flex justify-center gap-1">
+                <i class="ri-star-fill text-primary text-sm"></i>
+                <i class="ri-star-fill text-primary text-sm"></i>
+                <i class="ri-star-fill text-primary text-sm"></i>
+                <i class="ri-star-fill text-primary text-sm"></i>
+                <i class="ri-star-fill text-primary text-sm"></i>
+              </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <!-- Git -->
+            <div
+              class="glass-effect rounded-xl p-6 text-center hover-lift"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <div
-                class="glass-card rounded-xl p-6 hover-lift transition-all duration-300 group"
-                data-aos="fade-up"
-                data-aos-delay="100"
+                class="w-16 h-16 mx-auto mb-4 gradient-bg rounded-full flex items-center justify-center"
               >
-                <div class="text-center">
-                  <div
-                    class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-red-primary to-red-secondary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
-                  >
-                    <i class="fab fa-git-alt text-white text-2xl"></i>
-                  </div>
-                  <h4 class="font-bold text-lg mb-2">Git</h4>
-                  <p class="text-gray-400 text-sm">Version Control</p>
-                  <!-- Rating Stars -->
-                  <div class="flex justify-center mt-3 gap-1">
-                    <i class="fas fa-star text-red-primary text-sm"></i>
-                    <i class="far fa-star text-gray-400 text-sm"></i>
-                    <i class="far fa-star text-gray-400 text-sm"></i>
-                    <i class="far fa-star text-gray-400 text-sm"></i>
-                    <i class="far fa-star text-gray-400 text-sm"></i>
-                  </div>
+                <i class="ri-settings-3-line text-white text-2xl"></i>
+              </div>
+              <h4 class="font-bold mb-2">phpMyAdmin</h4>
+              <div class="flex justify-center gap-1">
+                <i class="ri-star-fill text-primary text-sm"></i>
+                <i class="ri-star-fill text-primary text-sm"></i>
+                <i class="ri-star-fill text-primary text-sm"></i>
+                <i class="ri-star-fill text-primary text-sm"></i>
+                <i class="ri-star-line text-gray-400 text-sm"></i>
+              </div>
+            </div>
+
+            <div
+              class="glass-effect rounded-xl p-6 text-center hover-lift"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div
+                class="w-16 h-16 mx-auto mb-4 gradient-bg rounded-full flex items-center justify-center"
+              >
+                <i class="ri-pencil-ruler-2-line text-white text-2xl"></i>
+              </div>
+              <h4 class="font-bold mb-2">Figma</h4>
+              <div class="flex justify-center gap-1">
+                <i class="ri-star-fill text-primary text-sm"></i>
+                <i class="ri-star-fill text-primary text-sm"></i>
+                <i class="ri-star-fill text-primary text-sm"></i>
+                <i class="ri-star-line text-gray-400 text-sm"></i>
+                <i class="ri-star-line text-gray-400 text-sm"></i>
+              </div>
+            </div>
+
+            <div
+              class="glass-effect rounded-xl p-6 text-center hover-lift"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div
+                class="w-16 h-16 mx-auto mb-4 gradient-bg rounded-full flex items-center justify-center"
+              >
+                <i class="ri-git-branch-line text-white text-2xl"></i>
+              </div>
+              <h4 class="font-bold mb-2">Git</h4>
+              <div class="flex justify-center gap-1">
+                <i class="ri-star-fill text-primary text-sm"></i>
+                <i class="ri-star-fill text-primary text-sm"></i>
+                <i class="ri-star-line text-gray-400 text-sm"></i>
+                <i class="ri-star-line text-gray-400 text-sm"></i>
+                <i class="ri-star-line text-gray-400 text-sm"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div
+            class="flex items-center justify-center mb-12"
+            data-aos="fade-up"
+          >
+            <div
+              class="h-px bg-gradient-to-r from-transparent via-primary to-transparent flex-1"
+            ></div>
+            <h3 class="text-2xl font-bold mx-6 text-primary">
+              Basic Development
+            </h3>
+            <div
+              class="h-px bg-gradient-to-r from-transparent via-primary to-transparent flex-1"
+            ></div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div
+              class="skill-card glass-effect rounded-xl p-6 hover-lift"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="flex items-center gap-4 mb-4">
+                <div
+                  class="w-14 h-14 gradient-bg rounded-lg flex items-center justify-center"
+                >
+                  <i class="ri-html5-line text-white text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg">HTML5</h4>
+                  <p class="text-gray-400 text-sm">Markup Language</p>
                 </div>
               </div>
-
-              <!-- MySQL -->
-              <div
-                class="glass-card rounded-xl p-6 hover-lift transition-all duration-300 group"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                <div class="text-center">
+              <div class="mb-2">
+                <div class="flex justify-between text-sm mb-1">
+                  <span>Learning</span>
+                  <span class="text-primary">60%</span>
+                </div>
+                <div class="w-full bg-gray-700 rounded-full h-2">
                   <div
-                    class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-red-primary to-red-secondary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
-                  >
-                    <i class="fas fa-database text-white text-2xl"></i>
-                  </div>
-                  <h4 class="font-bold text-lg mb-2">MySQL</h4>
-                  <p class="text-gray-400 text-sm">Database</p>
-                  <!-- Rating Stars -->
-                  <div class="flex justify-center mt-3 gap-1">
-                    <i class="fas fa-star text-red-primary text-sm"></i>
-                    <i class="fas fa-star text-red-primary text-sm"></i>
-                    <i class="fas fa-star text-red-primary text-sm"></i>
-                    <i class="fas fa-star text-red-primary text-sm"></i>
-                    <i class="far fa-star text-gray-400 text-sm"></i>
-                  </div>
+                    class="gradient-bg h-2 rounded-full"
+                    style="width: 60%"
+                  ></div>
                 </div>
               </div>
+            </div>
 
-              <!-- Figma -->
-              <div
-                class="glass-card rounded-xl p-6 hover-lift transition-all duration-300 group"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <div class="text-center">
-                  <div
-                    class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-red-primary to-red-secondary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
-                  >
-                    <i class="fab fa-figma text-white text-2xl"></i>
-                  </div>
-                  <h4 class="font-bold text-lg mb-2">Figma</h4>
-                  <p class="text-gray-400 text-sm">UI/UX Design</p>
-                  <!-- Rating Stars -->
-                  <div class="flex justify-center mt-3 gap-1">
-                    <i class="fas fa-star text-red-primary text-sm"></i>
-                    <i class="fas fa-star text-red-primary text-sm"></i>
-                    <i class="far fa-star text-gray-400 text-sm"></i>
-                    <i class="far fa-star text-gray-400 text-sm"></i>
-                    <i class="far fa-star text-gray-400 text-sm"></i>
-                  </div>
+            <div
+              class="skill-card glass-effect rounded-xl p-6 hover-lift"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="flex items-center gap-4 mb-4">
+                <div
+                  class="w-14 h-14 gradient-bg rounded-lg flex items-center justify-center"
+                >
+                  <i class="ri-css3-line text-white text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg">CSS3</h4>
+                  <p class="text-gray-400 text-sm">Styling</p>
                 </div>
               </div>
-
-              <!-- VS Code -->
-              <div
-                class="glass-card rounded-xl p-6 hover-lift transition-all duration-300 group"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
-                <div class="text-center">
+              <div class="mb-2">
+                <div class="flex justify-between text-sm mb-1">
+                  <span>Learning</span>
+                  <span class="text-primary">45%</span>
+                </div>
+                <div class="w-full bg-gray-700 rounded-full h-2">
                   <div
-                    class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-red-primary to-red-secondary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
-                  >
-                    <i class="fas fa-code text-white text-2xl"></i>
-                  </div>
-                  <h4 class="font-bold text-lg mb-2">VS Code</h4>
-                  <p class="text-gray-400 text-sm">Code Editor</p>
-                  <!-- Rating Stars -->
-                  <div class="flex justify-center mt-3 gap-1">
-                    <i class="fas fa-star text-red-primary text-sm"></i>
-                    <i class="fas fa-star text-red-primary text-sm"></i>
-                    <i class="fas fa-star text-red-primary text-sm"></i>
-                    <i class="fas fa-star text-red-primary text-sm"></i>
-                    <i class="fas fa-star text-red-primary text-sm"></i>
-                  </div>
+                    class="gradient-bg h-2 rounded-full"
+                    style="width: 45%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="skill-card glass-effect rounded-xl p-6 hover-lift"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="flex items-center gap-4 mb-4">
+                <div
+                  class="w-14 h-14 gradient-bg rounded-lg flex items-center justify-center"
+                >
+                  <i class="ri-bootstrap-line text-white text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg">Bootstrap</h4>
+                  <p class="text-gray-400 text-sm">CSS Framework</p>
+                </div>
+              </div>
+              <div class="mb-2">
+                <div class="flex justify-between text-sm mb-1">
+                  <span>Learning</span>
+                  <span class="text-primary">40%</span>
+                </div>
+                <div class="w-full bg-gray-700 rounded-full h-2">
+                  <div
+                    class="gradient-bg h-2 rounded-full"
+                    style="width: 40%"
+                  ></div>
                 </div>
               </div>
             </div>
@@ -452,8 +605,116 @@
       </div>
     </section>
 
-    <section id="contact" class="py-20 bg-dark-card p-6">
-      <div class="mx-auto container">
+    <section id="services" class="py-20 bg-dark-light">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-4xl md:text-5xl font-bold text-center mb-16"
+          data-aos="fade-up"
+        >
+          My <span class="gradient-text">Services</span>
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="glass-effect rounded-xl p-8 hover-lift"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mb-6"
+            >
+              <i class="ri-database-2-line text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-primary">Database Design</h3>
+            <p class="text-gray-400 mb-4">
+              Creating efficient, scalable database architectures tailored to
+              your business needs with proper normalization and optimization.
+            </p>
+            <ul class="text-sm text-gray-300 space-y-2">
+              <li class="flex items-center gap-2">
+                <i class="ri-check-line text-primary"></i>
+                <span>ERD Creation</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="ri-check-line text-primary"></i>
+                <span>Schema Optimization</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="ri-check-line text-primary"></i>
+                <span>Data Modeling</span>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="glass-effect rounded-xl p-8 hover-lift"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mb-6"
+            >
+              <i class="ri-bar-chart-box-line text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-primary">Data Analysis</h3>
+            <p class="text-gray-400 mb-4">
+              Transform your raw data into actionable insights through
+              comprehensive analysis and visualization techniques.
+            </p>
+            <ul class="text-sm text-gray-300 space-y-2">
+              <li class="flex items-center gap-2">
+                <i class="ri-check-line text-primary"></i>
+                <span>Statistical Analysis</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="ri-check-line text-primary"></i>
+                <span>Data Visualization</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="ri-check-line text-primary"></i>
+                <span>Report Generation</span>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="glass-effect rounded-xl p-8 hover-lift"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mb-6"
+            >
+              <i class="ri-bug-line text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-primary">
+              Database Testing
+            </h3>
+            <p class="text-gray-400 mb-4">
+              Ensure your database systems are reliable, secure, and performing
+              optimally through comprehensive testing.
+            </p>
+            <ul class="text-sm text-gray-300 space-y-2">
+              <li class="flex items-center gap-2">
+                <i class="ri-check-line text-primary"></i>
+                <span>Performance Testing</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="ri-check-line text-primary"></i>
+                <span>Data Integrity Checks</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="ri-check-line text-primary"></i>
+                <span>Security Audits</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-20">
+      <div class="container mx-auto px-6">
         <h2
           class="text-4xl md:text-5xl font-bold text-center mb-16"
           data-aos="fade-up"
@@ -463,121 +724,192 @@
 
         <div class="mx-auto">
           <div
-            class="bg-[#0F0F0F] glass-card rounded-2xl p-8 mb-12 text-center"
+            class="glass-effect rounded-2xl p-8 mb-12 text-center"
             data-aos="fade-up"
           >
             <div
-              class="w-20 h-20 mx-auto mb-6 bg-red-primary rounded-full flex items-center justify-center"
+              class="w-20 h-20 mx-auto mb-6 gradient-bg rounded-full flex items-center justify-center"
             >
-              <i class="fas fa-file-download text-white text-2xl"></i>
+              <i class="ri-file-download-line text-white text-3xl"></i>
             </div>
-            <h3 class="text-2xl font-bold mb-4">Download My CV</h3>
+            <h3 class="text-2xl font-bold mb-4">Download My Resume</h3>
             <p class="text-gray-400 mb-6">
-              Get a detailed overview of my experience, skills, and
-              achievements.
+              Get a comprehensive overview of my database expertise, skills, and
+              professional experience.
             </p>
             <a
-              href="public/docs/resume.pdf"
-              download="Rizkyla_CV.pdf"
-              class="bg-red-primary hover:bg-red-secondary px-8 py-4 rounded-lg font-semibold transition-all duration-300 inline-flex items-center gap-2"
-              target="_blank"
+              href="#"
+              class="gradient-bg hover:shadow-lg hover:shadow-primary/50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 inline-flex items-center gap-2 transform hover:scale-105"
             >
-              <i class="fas fa-download"></i>
-              Download CV (PDF)
+              <i class="ri-download-line"></i>
+              Download Resume (PDF)
             </a>
           </div>
 
-          <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <div class="grid md:grid-cols-2 gap-8">
             <div
-              class="bg-[#0F0F0F] glass-card rounded-xl p-8"
+              class="glass-effect rounded-xl p-8"
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <h3 class="text-xl font-bold mb-6 text-red-primary">
+              <h3
+                class="text-xl font-bold mb-6 text-primary flex items-center gap-2"
+              >
+                <i class="ri-contacts-line"></i>
                 Contact Information
               </h3>
-              <div class="space-y-4">
+
+              <div class="space-y-6">
                 <div class="flex items-center gap-4">
                   <div
-                    class="w-10 h-10 bg-red-primary/20 rounded-lg flex items-center justify-center"
+                    class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center"
                   >
-                    <i class="fas fa-envelope text-red-primary"></i>
+                    <i class="ri-mail-line text-primary text-xl"></i>
                   </div>
                   <div>
                     <p class="text-sm text-gray-400">Email</p>
                     <p class="font-medium">lahamsarizky@gmail.com</p>
                   </div>
                 </div>
+
                 <div class="flex items-center gap-4">
                   <div
-                    class="w-10 h-10 bg-red-primary/20 rounded-lg flex items-center justify-center"
+                    class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center"
                   >
-                    <i class="fas fa-phone text-red-primary"></i>
+                    <i class="ri-phone-line text-primary text-xl"></i>
                   </div>
                   <div>
                     <p class="text-sm text-gray-400">Phone</p>
                     <p class="font-medium">+62 812-4617-9959</p>
                   </div>
                 </div>
+
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center"
+                  >
+                    <i class="ri-map-pin-line text-primary text-xl"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-400">Available for</p>
+                    <p class="font-medium">Remote & On-site Projects</p>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div
-              class="bg-[#0F0F0F] glass-card rounded-xl p-8"
+              class="glass-effect rounded-xl p-8"
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <h3 class="text-xl font-bold mb-6 text-red-primary">
+              <h3
+                class="text-xl font-bold mb-6 text-primary flex items-center gap-2"
+              >
+                <i class="ri-links-line"></i>
                 Connect With Me
               </h3>
+
               <div class="space-y-4">
                 <a
                   href="https://instagram.com/riz.txy"
-                  class="flex items-center gap-4 hover:bg-red-primary/10 p-3 rounded-lg transition-colors"
+                  target="_blank"
+                  class="flex items-center gap-4 hover:bg-primary/10 p-4 rounded-lg transition-all duration-300 group"
                 >
                   <div
-                    class="w-10 h-10 bg-red-primary rounded-lg flex items-center justify-center"
+                    class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
                   >
-                    <i class="fab fa-instagram text-white"></i>
+                    <i class="ri-instagram-line text-white text-xl"></i>
                   </div>
                   <div>
                     <p class="font-medium">Instagram</p>
-                    <p class="text-sm text-gray-400">instagram.com/riz.txy</p>
+                    <p class="text-sm text-gray-400">@riz.txy</p>
                   </div>
+                  <i
+                    class="ri-external-link-line text-gray-400 ml-auto group-hover:text-primary transition-colors"
+                  ></i>
                 </a>
+
                 <a
                   href="https://github.com/ikikk19"
-                  class="flex items-center gap-4 hover:bg-red-primary/10 p-3 rounded-lg transition-colors"
+                  target="_blank"
+                  class="flex items-center gap-4 hover:bg-primary/10 p-4 rounded-lg transition-all duration-300 group"
                 >
                   <div
-                    class="w-10 h-10 bg-red-primary rounded-lg flex items-center justify-center"
+                    class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
                   >
-                    <i class="fab fa-github text-white"></i>
+                    <i class="ri-github-line text-white text-xl"></i>
                   </div>
                   <div>
                     <p class="font-medium">GitHub</p>
                     <p class="text-sm text-gray-400">github.com/ikikk19</p>
                   </div>
+                  <i
+                    class="ri-external-link-line text-gray-400 ml-auto group-hover:text-primary transition-colors"
+                  ></i>
+                </a>
+
+                <a
+                  href="mailto:lahamsarizky@gmail.com"
+                  class="flex items-center gap-4 hover:bg-primary/10 p-4 rounded-lg transition-all duration-300 group"
+                >
+                  <div
+                    class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i class="ri-mail-line text-white text-xl"></i>
+                  </div>
+                  <div>
+                    <p class="font-medium">Email Me</p>
+                    <p class="text-sm text-gray-400">Direct contact</p>
+                  </div>
+                  <i
+                    class="ri-external-link-line text-gray-400 ml-auto group-hover:text-primary transition-colors"
+                  ></i>
                 </a>
               </div>
             </div>
+          </div>
+
+          <div
+            class="text-center mt-12"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <p class="text-lg text-gray-300 mb-6">
+              Ready to transform your data into valuable insights?
+            </p>
+            <a
+              href="mailto:lahamsarizky@gmail.com"
+              class="gradient-bg hover:shadow-lg hover:shadow-primary/50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 inline-flex items-center gap-2 transform hover:scale-105"
+            >
+              <i class="ri-send-plane-line"></i>
+              Start a Project
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="py-8 bg-[#0F0F0F] border-t border-gray-800">
-      <div class="container mx-auto px-6 text-center">
-        <p class="text-gray-400">© 2025 MV & RZ. All rights reserved.</p>
+    <footer class="py-8 bg-dark-light border-t border-gray-800">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="flex items-center space-x-3 mb-4 md:mb-0">
+            <div
+              class="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center"
+            >
+              <i class="ri-database-2-line text-white text-lg"></i>
+            </div>
+            <span class="text-lg font-bold gradient-text">Rizkyla</span>
+          </div>
+          <p class="text-gray-400 text-center md:text-right">
+            © 2025 Rizkyla. All rights reserved. | Database Designer & Data
+            Analyst
+          </p>
+        </div>
       </div>
     </footer>
-    <script src="assets/js/main.js"></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000,
-        once: false,
-      });
-    </script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

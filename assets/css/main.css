@@ -1,18 +1,49 @@
-gradient-text {
-  background: linear-gradient(135deg, #dc2626, #ef4444);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.glass-card {
-  background: rgba(26, 26, 26, 0.8);
-  border: 1px solid rgba(220, 38, 38, 0.2);
-  backdrop-filter: blur(10px);
+.gradient-bg {
+  background: linear-gradient(135deg, #3b82f6, #1e40af);
+}
+
+.hover-lift {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .hover-lift:hover {
   transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 .scroll-indicator {
@@ -20,8 +51,33 @@ gradient-text {
   top: 0;
   left: 0;
   width: 0%;
-  height: 3px;
-  background: linear-gradient(90deg, #dc2626, #ef4444);
-  z-index: 1000;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  z-index: 9999;
   transition: width 0.3s ease;
+}
+
+.skill-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(59, 130, 246, 0.2),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.skill-card:hover::before {
+  left: 100%;
 }
