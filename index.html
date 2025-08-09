@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="RFormation - Portfolio of Rizkyla, Data Analyst & UI/UX Designer specializing in data analysis, system testing, and intuitive UI/UX design."
+    />
+    <meta
+      name="keywords"
+      content="data analyst, UI/UX designer, system tester, portfolio, Rizkyla, RFormation"
+    />
+    <meta name="author" content="Rizkyla" />
+    <title>
+      RFormation - Rizkyla's Portfolio | Data Analyst & UI/UX Designer
+    </title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="public/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="public/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="public/favicon-16x16.png"
+    />
+    <link rel="manifest" href="public/site.webmanifest" />
+    <link rel="mask-icon" href="public/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="bg-dark-bg text-white">
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+    <nav
+      class="fixed top-0 w-full z-50 glass-card transition-all duration-300"
+      id="navbar"
+    >
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center space-x-4">
+            <img
+              src="assets/img/logo02.png"
+              alt="Profile"
+              class="w-12 h-12 rounded-full object-cover"
+            />
+            <div class="text-2xl font-bold gradient-text">RFormation</div>
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#home"
+              class="hover:text-red-primary transition-colors duration-300"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="hover:text-red-primary transition-colors duration-300"
+              >About</a
+            >
+            <a
+              href="#skills"
+              class="hover:text-red-primary transition-colors duration-300"
+              >Skills</a
+            >
+            <a
+              href="#projects"
+              class="hover:text-red-primary transition-colors duration-300"
+              >Projects</a
+            >
+            <a
+              href="#contact"
+              class="hover:text-red-primary transition-colors duration-300"
+              >Contact</a
+            >
+          </div>
+          <button class="md:hidden text-red-primary" id="mobileMenuBtn">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+        <div class="md:hidden mt-4 space-y-4 hidden" id="mobileMenu">
+          <a
+            href="#home"
+            class="block hover:text-red-primary transition-colors duration-300"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="block hover:text-red-primary transition-colors duration-300"
+            >About</a
+          >
+          <a
+            href="#skills"
+            class="block hover:text-red-primary transition-colors duration-300"
+            >Skills</a
+          >
+          <a
+            href="#projects"
+            class="block hover:text-red-primary transition-colors duration-300"
+            >Projects</a
+          >
+          <a
+            href="#contact"
+            class="block hover:text-red-primary transition-colors duration-300"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center justify-center">
+      <div class="absolute inset-0 opacity-10 overflow-hidden">
+        <div
+          class="absolute top-20 left-20 w-72 h-72 bg-red-primary rounded-full mix-blend-multiply filter blur-xl animate-float"
+        ></div>
+        <div
+          class="absolute top-40 right-20 w-72 h-72 bg-red-secondary rounded-full mix-blend-multiply filter blur-xl animate-float"
+          style="animation-delay: 2s"
+        ></div>
+        <div
+          class="absolute bottom-20 left-1/2 w-72 h-72 bg-red-accent rounded-full mix-blend-multiply filter blur-xl animate-float"
+          style="animation-delay: 4s"
+        ></div>
+      </div>
+      <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6">
+          Hi, I'm <span class="gradient-text">Rizkyla</span>
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 text-gray-300">
+          Data Analyzer & UI/UX Designer
+        </p>
+        <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
+          I analyze data, test systems, and design intuitive UI/UX experiences
+          that deliver real results.
+        </p>
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <a
+            href="#projects"
+            class="bg-red-primary hover:bg-red-secondary px-8 py-4 rounded-lg font-semibold transition-all duration-300"
+          >
+            View My Work
+          </a>
+          <a
+            href="public/docs/resume.pdf"
+            class="border-2 border-red-primary text-red-primary hover:bg-red-primary hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300"
+            target="_blank"
+          >
+            Download CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-20 bg-dark-card">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+          <h2 class="text-4xl md:text-5xl font-bold mb-8">
+            About <span class="gradient-text">Me</span>
+          </h2>
+          <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+            I'm a beginner data analyst, UI/UX designer, and tester with a
+            passion for creating intuitive digital experiences. I enjoy
+            analyzing data, testing systems, and designing user-friendly
+            interfaces that deliver real results.
+          </p>
+          <div
+            class="flex flex-wrap justify-center gap-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <span
+              class="bg-red-primary/20 text-red-accent px-4 py-2 rounded-full"
+              >Creative Problem Solver</span
+            >
+            <span
+              class="bg-red-primary/20 text-red-accent px-4 py-2 rounded-full"
+              >Team Player</span
+            >
+            <span
+              class="bg-red-primary/20 text-red-accent px-4 py-2 rounded-full"
+              >Continuous Learner</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="py-20">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-4xl md:text-5xl font-bold text-center mb-16"
+          data-aos="fade-up"
+        >
+          My <span class="gradient-text">Skills</span>
+        </h2>
+
+        <!-- Skills Grid -->
+        <div class="max-w-6xl mx-auto">
+          <!-- Frontend Development -->
+          <div class="mb-16">
+            <div
+              class="flex items-center justify-center mb-8"
+              data-aos="fade-up"
+            >
+              <div
+                class="h-px bg-gradient-to-r from-transparent via-red-primary to-transparent flex-1"
+              ></div>
+              <h3 class="text-2xl font-bold mx-6 text-red-primary">
+                Frontend Development
+              </h3>
+              <div
+                class="h-px bg-gradient-to-r from-transparent via-red-primary to-transparent flex-1"
+              ></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <!-- CSS -->
+              <div
+                class="glass-card rounded-xl p-6 hover-lift transition-all duration-300 group"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-14 h-14 bg-gradient-to-br from-red-primary to-red-secondary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i class="fab fa-css3-alt text-white text-2xl"></i>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="font-bold text-lg">CSS</h4>
+                    <p class="text-gray-400 text-sm">Styling & Animations</p>
+                  </div>
+                </div>
+                <!-- Skill Level -->
+                <div class="mt-4">
+                  <div class="flex justify-between text-sm mb-1">
+                    <span>Proficiency</span>
+                    <span class="text-red-primary">70%</span>
+                  </div>
+                  <div class="w-full bg-gray-700 rounded-full h-2">
+                    <div
+                      class="bg-gradient-to-r from-red-primary to-red-secondary h-2 rounded-full"
+                      style="width: 70%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bootstrap -->
+              <div
+                class="glass-card rounded-xl p-6 hover-lift transition-all duration-300 group"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-14 h-14 bg-gradient-to-br from-red-primary to-red-secondary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i class="fab fa-bootstrap text-white text-2xl"></i>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="font-bold text-lg">Bootstrap</h4>
+                    <p class="text-gray-400 text-sm">CSS Framework</p>
+                  </div>
+                </div>
+                <!-- Skill Level -->
+                <div class="mt-4">
+                  <div class="flex justify-between text-sm mb-1">
+                    <span>Proficiency</span>
+                    <span class="text-red-primary">55%</span>
+                  </div>
+                  <div class="w-full bg-gray-700 rounded-full h-2">
+                    <div
+                      class="bg-gradient-to-r from-red-primary to-red-secondary h-2 rounded-full"
+                      style="width: 55%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- HTML5 -->
+              <div
+                class="glass-card rounded-xl p-6 hover-lift transition-all duration-300 group"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-14 h-14 bg-gradient-to-br from-red-primary to-red-secondary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i class="fab fa-html5 text-white text-2xl"></i>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="font-bold text-lg">HTML5</h4>
+                    <p class="text-gray-400 text-sm">Markup & Structure</p>
+                  </div>
+                </div>
+                <!-- Skill Level -->
+                <div class="mt-4">
+                  <div class="flex justify-between text-sm mb-1">
+                    <span>Proficiency</span>
+                    <span class="text-red-primary">95%</span>
+                  </div>
+                  <div class="w-full bg-gray-700 rounded-full h-2">
+                    <div
+                      class="bg-gradient-to-r from-red-primary to-red-secondary h-2 rounded-full"
+                      style="width: 95%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Technologies -->
+          <div>
+            <div
+              class="flex items-center justify-center mb-8"
+              data-aos="fade-up"
+            >
+              <div
+                class="h-px bg-gradient-to-r from-transparent via-red-primary to-transparent flex-1"
+              ></div>
+              <h3 class="text-2xl font-bold mx-6 text-red-primary">
+                Tools & Technologies
+              </h3>
+              <div
+                class="h-px bg-gradient-to-r from-transparent via-red-primary to-transparent flex-1"
+              ></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <!-- Git -->
+              <div
+                class="glass-card rounded-xl p-6 hover-lift transition-all duration-300 group"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="text-center">
+                  <div
+                    class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-red-primary to-red-secondary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i class="fab fa-git-alt text-white text-2xl"></i>
+                  </div>
+                  <h4 class="font-bold text-lg mb-2">Git</h4>
+                  <p class="text-gray-400 text-sm">Version Control</p>
+                  <!-- Rating Stars -->
+                  <div class="flex justify-center mt-3 gap-1">
+                    <i class="fas fa-star text-red-primary text-sm"></i>
+                    <i class="far fa-star text-gray-400 text-sm"></i>
+                    <i class="far fa-star text-gray-400 text-sm"></i>
+                    <i class="far fa-star text-gray-400 text-sm"></i>
+                    <i class="far fa-star text-gray-400 text-sm"></i>
+                  </div>
+                </div>
+              </div>
+
+              <!-- MySQL -->
+              <div
+                class="glass-card rounded-xl p-6 hover-lift transition-all duration-300 group"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="text-center">
+                  <div
+                    class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-red-primary to-red-secondary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i class="fas fa-database text-white text-2xl"></i>
+                  </div>
+                  <h4 class="font-bold text-lg mb-2">MySQL</h4>
+                  <p class="text-gray-400 text-sm">Database</p>
+                  <!-- Rating Stars -->
+                  <div class="flex justify-center mt-3 gap-1">
+                    <i class="fas fa-star text-red-primary text-sm"></i>
+                    <i class="fas fa-star text-red-primary text-sm"></i>
+                    <i class="fas fa-star text-red-primary text-sm"></i>
+                    <i class="fas fa-star text-red-primary text-sm"></i>
+                    <i class="far fa-star text-gray-400 text-sm"></i>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Figma -->
+              <div
+                class="glass-card rounded-xl p-6 hover-lift transition-all duration-300 group"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="text-center">
+                  <div
+                    class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-red-primary to-red-secondary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i class="fab fa-figma text-white text-2xl"></i>
+                  </div>
+                  <h4 class="font-bold text-lg mb-2">Figma</h4>
+                  <p class="text-gray-400 text-sm">UI/UX Design</p>
+                  <!-- Rating Stars -->
+                  <div class="flex justify-center mt-3 gap-1">
+                    <i class="fas fa-star text-red-primary text-sm"></i>
+                    <i class="fas fa-star text-red-primary text-sm"></i>
+                    <i class="far fa-star text-gray-400 text-sm"></i>
+                    <i class="far fa-star text-gray-400 text-sm"></i>
+                    <i class="far fa-star text-gray-400 text-sm"></i>
+                  </div>
+                </div>
+              </div>
+
+              <!-- VS Code -->
+              <div
+                class="glass-card rounded-xl p-6 hover-lift transition-all duration-300 group"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <div class="text-center">
+                  <div
+                    class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-red-primary to-red-secondary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i class="fas fa-code text-white text-2xl"></i>
+                  </div>
+                  <h4 class="font-bold text-lg mb-2">VS Code</h4>
+                  <p class="text-gray-400 text-sm">Code Editor</p>
+                  <!-- Rating Stars -->
+                  <div class="flex justify-center mt-3 gap-1">
+                    <i class="fas fa-star text-red-primary text-sm"></i>
+                    <i class="fas fa-star text-red-primary text-sm"></i>
+                    <i class="fas fa-star text-red-primary text-sm"></i>
+                    <i class="fas fa-star text-red-primary text-sm"></i>
+                    <i class="fas fa-star text-red-primary text-sm"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-dark-card p-6">
+      <div class="mx-auto container">
+        <h2
+          class="text-4xl md:text-5xl font-bold text-center mb-16"
+          data-aos="fade-up"
+        >
+          Get In <span class="gradient-text">Touch</span>
+        </h2>
+
+        <div class="mx-auto">
+          <div
+            class="bg-[#0F0F0F] glass-card rounded-2xl p-8 mb-12 text-center"
+            data-aos="fade-up"
+          >
+            <div
+              class="w-20 h-20 mx-auto mb-6 bg-red-primary rounded-full flex items-center justify-center"
+            >
+              <i class="fas fa-file-download text-white text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Download My CV</h3>
+            <p class="text-gray-400 mb-6">
+              Get a detailed overview of my experience, skills, and
+              achievements.
+            </p>
+            <a
+              href="public/docs/resume.pdf"
+              download="Rizkyla_CV.pdf"
+              class="bg-red-primary hover:bg-red-secondary px-8 py-4 rounded-lg font-semibold transition-all duration-300 inline-flex items-center gap-2"
+              target="_blank"
+            >
+              <i class="fas fa-download"></i>
+              Download CV (PDF)
+            </a>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div
+              class="bg-[#0F0F0F] glass-card rounded-xl p-8"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <h3 class="text-xl font-bold mb-6 text-red-primary">
+                Contact Information
+              </h3>
+              <div class="space-y-4">
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-10 h-10 bg-red-primary/20 rounded-lg flex items-center justify-center"
+                  >
+                    <i class="fas fa-envelope text-red-primary"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-400">Email</p>
+                    <p class="font-medium">lahamsarizky@gmail.com</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-10 h-10 bg-red-primary/20 rounded-lg flex items-center justify-center"
+                  >
+                    <i class="fas fa-phone text-red-primary"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-400">Phone</p>
+                    <p class="font-medium">+62 812-4617-9959</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-[#0F0F0F] glass-card rounded-xl p-8"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <h3 class="text-xl font-bold mb-6 text-red-primary">
+                Connect With Me
+              </h3>
+              <div class="space-y-4">
+                <a
+                  href="https://instagram.com/riz.txy"
+                  class="flex items-center gap-4 hover:bg-red-primary/10 p-3 rounded-lg transition-colors"
+                >
+                  <div
+                    class="w-10 h-10 bg-red-primary rounded-lg flex items-center justify-center"
+                  >
+                    <i class="fab fa-instagram text-white"></i>
+                  </div>
+                  <div>
+                    <p class="font-medium">Instagram</p>
+                    <p class="text-sm text-gray-400">instagram.com/riz.txy</p>
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/ikikk19"
+                  class="flex items-center gap-4 hover:bg-red-primary/10 p-3 rounded-lg transition-colors"
+                >
+                  <div
+                    class="w-10 h-10 bg-red-primary rounded-lg flex items-center justify-center"
+                  >
+                    <i class="fab fa-github text-white"></i>
+                  </div>
+                  <div>
+                    <p class="font-medium">GitHub</p>
+                    <p class="text-sm text-gray-400">github.com/ikikk19</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-8 bg-[#0F0F0F] border-t border-gray-800">
+      <div class="container mx-auto px-6 text-center">
+        <p class="text-gray-400">© 2025 MV & RZ. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: false,
+      });
+    </script>
+  </body>
+</html>

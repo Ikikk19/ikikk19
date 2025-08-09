@@ -1,0 +1,27 @@
+gradient-text {
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-card {
+  background: rgba(26, 26, 26, 0.8);
+  border: 1px solid rgba(220, 38, 38, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+}
+
+.scroll-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, #dc2626, #ef4444);
+  z-index: 1000;
+  transition: width 0.3s ease;
+}
